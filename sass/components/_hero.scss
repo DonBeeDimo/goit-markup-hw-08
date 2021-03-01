@@ -1,55 +1,104 @@
 .hero {
-    text-align: center;
+  text-align: center;
+}
+
+.overlay {
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/шапкаmin480.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/шапкаmin768.jpg');
   }
-  
-  .overlay {
-    max-width: 1600px;
+
+  @media screen and (min-width: 769px) {
     height: 600px;
     padding-top: 200px;
-    margin: 0 auto;
-    background-color: #c4c4c4;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url('../images/шапкаmin.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
-  
-  .hero-title {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-  
-    color: $background-color;
-  
-    font-weight: 900;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $background-color;
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
   }
-  
-  .heading-container {
-    max-width: 660px;
-    margin: 0 auto;
+}
+
+.heading-container {
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
   }
+}
+
+/* button */
+.service {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  margin: auto;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: $accent-color;
   
-  /* button */
-  .service {
-    display: inline-block;
-    border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 200px;
+  & > span {
+  display: flex;
+  margin: auto;
+
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
   
-    background-color: $accent-color;
-    color: $background-color;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-  
-    cursor: pointer;
+  color: $background-color;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
