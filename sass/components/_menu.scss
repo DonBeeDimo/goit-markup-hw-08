@@ -1,0 +1,139 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-button {
+      margin-left: auto;
+      padding: 0;
+      border: none;
+      color: $primary-text-color;
+      background-color: transparent;
+      @include transit($timing-function);
+      z-index: 2;
+      cursor: pointer;
+      outline: none;
+  
+      width: 40px;
+      height: 40px;
+  
+      & svg {
+        fill: currentColor;
+      }
+  
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+    
+    .menu-button .icon-cross {
+      display: none;
+    }
+    
+    .menu-button.is-open .icon-cross {
+      display: block;
+    }
+    
+    .menu-button.is-open .icon-menu {
+      display: none;
+    }
+    
+    .menu-container {
+      display: none;
+    
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 48px 40px;
+      background-color: $background-color;
+      padding: 48px 40px;
+      cursor: pointer;
+      z-index: 1;
+      
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+    
+      &.is-open {
+        display: block;
+      }
+    }
+  
+    .menu-nav {
+      font-size: 40px;
+      line-height: 1.18;
+  
+      & li:not(:last-child) {
+        margin-bottom: 32px;
+  
+        & .current {
+          color: $accent-color;
+          }
+      }
+  
+      & .link {
+        color: $primary-text-color;
+        @include transit($timing-function);
+  
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+  
+    .menu-tel {
+      margin-top: 302px;
+      font-size: 34px;
+      line-height: 1.18;
+  
+      & a {
+        color: $accent-color;
+      }
+    }
+  
+    .menu-mail {
+      margin-top: 32px;
+      font-size: 24px;
+      line-height: 1.17;
+  
+      & a {
+        color: $title-text-color;
+        @include transit($timing-function);
+  
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+  
+    .menu-sn {
+      display: flex;
+      margin-top: 64px;
+      font-size: 18px;
+      line-height: 1.22;
+      margin-left: -10px;
+      flex-wrap: wrap;
+  
+      & li {
+        margin-left: 10px;
+      }
+  
+      & li:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
+  
+      & a {
+        color: $accent-color;
+      }
+    }

@@ -1,0 +1,68 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-vectttormin {
+  width: 1.1669921875em;
+}
+
+.icon-konvertmin {
+  width: 1.3330078125em;
+}
+
+.icon-WebStudio1 {
+  width: 7.2001953125em;
+}
+
+.icon-envelope {
+  width: 1.3330078125em;
+}
+
+.icon-logo1min {
+  width: 0.900390625em;
+}
+
+.icon-logo2min {
+  width: 0.76953125em;
+}
+
+.icon-logo3min {
+  width: 0.953125em;
+}
+
+.icon-logo4min {
+  width: 1.6474609375em;
+}
+
+.icon-logo5min {
+  width: 1.2548828125em;
+}
+
+.icon-logo6min {
+  width: 1.9345703125em;
+}
+
+.icon-smartphone {
+  width: 0.625em;
+}
+
+.icon-vector {
+  width: 0.9716796875em;
+}
+
+.icon-webstudio {
+  width: 7.2001953125em;
+}

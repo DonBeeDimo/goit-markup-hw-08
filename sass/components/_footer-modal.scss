@@ -1,0 +1,160 @@
+.footer-modal {
+    display: inline-block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  
+  .email-title {
+    color: $background-color;
+  
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+
+    input {
+      width: 358px;
+      height: 50px;
+      padding: 15px 16px;
+      margin-right: 12px;
+    
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-sizing: border-box;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+    
+      color: $background-color;
+      background-color: #2f303a;
+    }
+  }
+  
+ .email::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .subscribe {
+    position: relative;
+    display: flex;
+  
+    padding: 10px 0 10px 29px;
+    border-radius: 4px;
+  
+    min-width: 200px;
+    border: none;
+  
+    background-color: $accent-color;
+    color: $background-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    cursor: pointer;
+  }
+  
+  .telegram {
+    margin-left: 10px;
+    margin-right: 28px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .comment::placeholder {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  
+  .form-contract {
+    display: flex;
+    align-items: center;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  
+    margin-bottom: 30px;
+
+    input {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+  }
+  
+  .checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+  
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+
+    .checkbox:checked + & {
+      border-color: $accent-color;
+      background-color: $accent-color;
+      background-image: url("../images/iconcheckminimal.svg");
+      background-size: contain;
+      background-origin: border-box;
+    }
+  }
+  
+ .link-contract {
+    color: $accent-color;
+    text-decoration-line: underline;
+  }
+  
+  .send {
+    display: flex;
+  
+    border-radius: 4px;
+    padding: 10px 55px 10px 56px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    border: none;
+  
+    background-color: $accent-color;
+    color: $background-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    cursor: pointer;
+  }

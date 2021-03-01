@@ -1,0 +1,41 @@
+.section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .clients {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1bb;
+    border-radius: 4px;
+  
+    color: #afb1bb;
+  
+    @include transit($color);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+  }
+  
+  .client-logo {
+    fill: currentColor;
+  }
+  
+  .client-item:not(:last-child) {
+    margin-right: 30px;
+  }

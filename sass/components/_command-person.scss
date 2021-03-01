@@ -1,0 +1,44 @@
+.section.command-person {
+    margin-bottom: 10px;
+  
+    color: $primary-text-color;
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  
+  .command-list .title {
+    color: $title-text-color;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  .command-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-top: 16px;
+  
+    background-color: $background-color;
+    color: #afb1b8;
+  
+    @include transit($timing-function);
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    color: $background-color;
+  }
+  }
+  
+  .command-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }

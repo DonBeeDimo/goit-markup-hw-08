@@ -1,0 +1,170 @@
+.head {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+/* main-nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Header */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+/* Logo */
+
+.head-logo {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+/* site nav */
+
+.nav-points {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  align-items: center;
+
+  .item + .item {
+    margin-left: 50px;
+  }
+
+  a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primary-text-color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @include transit($timing-function);
+
+    &a:hover,
+    &a:focus {
+      color: $accent-color;
+    }
+  }
+
+  .link.current {
+    color: $accent-color;
+  }
+}
+
+.link {
+  position: relative;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: $accent-color;
+
+    opacity: 0;
+    @include transit($timing-function);
+  }
+
+  &.current::after {
+    opacity: 1;
+  }
+}
+
+.web-link {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+
+  .web-link .link-mail {
+    color: $title-text-color;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  
+    @include transit($timing-function);
+  }
+
+  .link-mail {
+    color: $title-text-color;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  
+    @include transit($timing-function);
+  }
+
+  &.link-mail:hover,
+  &.link-mail:focus {
+  outline: none;
+  color: $accent-color;
+}
+
+.link-tel {
+  color: $title-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  @include transit($timing-function);
+}
+
+&.link-tel:hover,
+&.link-tel:focus {
+  outline: none;
+  color: $accent-color;
+}
+}
+
+.link-mail {
+  display: flex;
+  align-items: center;
+
+  margin-right: 50px;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.link-tel {
+  display: flex;
+  align-items: center;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
