@@ -1,37 +1,88 @@
 .section-command {
-    max-width: 1600px;
-    margin: 0 auto;
-  
+  max-width: 1600px;
+  margin: 0 auto;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  font-size: 16px;
+  line-height: 1.19;
+
+  background-color: #f5f4fa;
+
+  @media (min-width: $desktop-width) {
     padding-top: 94px;
     padding-bottom: 94px;
-  
-    background-color: #f5f4fa;
   }
-  
-  .command-list {
+
+  .command-container {
+    display: block;
+  }
+}
+
+.command-list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
 
-    .item {
-      width: 270px;
-      height: 428px;
-      margin-right: 30px;
-      text-align: center;
-    
-      border-radius: 0px 0px 4px 4px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    
-      background-color: $background-color;
+  & img {
+    margin-bottom: 30px;
+    width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
     }
 
-    .item:nth-child(4n) {
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+}
+
+.command-item {
+  width: 450px;
+  height: 622px;
+  text-align: center;
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  background-color: $background-color;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 30px 0;
+    width: 354px;
+    height: 536px;
+
+    &:nth-child(2n) {
       margin-right: 0;
     }
-    
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
-  
-  
-  
- 
-  
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    height: 428px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
