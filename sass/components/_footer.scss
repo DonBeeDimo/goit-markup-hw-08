@@ -1,127 +1,143 @@
 .footer {
-    max-width: 1600px;
-    height: 252px;
-    margin: 0 auto;
-  
-    padding-top: 60px;
-    padding-bottom: 60px;
-  
-    background-color: #2f303a;
-  }
-  
-  .footer-logo {
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  .footer-web {
-    color: $accent-color;
-    font-family: Raleway, sans-serif;
-  
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  
-  .footer-studio {
-    color: $background-color;
-    font-family: Raleway, sans-serif;
-  
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+  display: block;
+  text-align: center;
+  margin: auto;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    &:hover {
-      color: $accent-color;
+  & > .container {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
     }
   }
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.studio-web {
+  width: 154px;
+  height: 28px;
+
+  @media (min-width: $desktop-width) {
+    width: 145px;
+    height: 31px;
+  }
+}
+
+.footer-addres {
+  display: block;
+  min-width: 231px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-left: 61px;
+  }
+}
+
+.address {
+  margin-bottom: 8px;
+
+  color: $background-color;
   
- .address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 9px;
-  
-    color: $background-color;
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
   }
-  
-  .footer-mail {
-    display: inline-block;
+}
+
+.footer-mail {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @include transit($timing-function);
+
+  &:hover,
+  &:focus {
+  color: $accent-color;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 9px;
-  
-    color: rgba(255, 255, 255, 0.6);
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-  
-    @include transit($timing-function);
+  }
+}
 
-    &:hover,
-    &:focus {
-    color: $accent-color;
-  }
-  }
-  
-  .footer-tel {
-    color: rgba(255, 255, 255, 0.6);
-  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-  
-    @include transit($timing-function);
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
 
-    &:hover,
-    &:focus {
-    color: $accent-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @include transit($timing-function);
+
+  &:hover,
+  &:focus {
+  color: $accent-color;
   }
+}
+
+.networks-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  color: $background-color;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
-  
-  .networks-title {
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
     color: $background-color;
-  
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
   }
-  
-  .container-footer {
-    display: flex;
-  }
-  .social-networks {
-    margin-left: 70px;
-  }
-  
-  .networks-title {
-    padding-bottom: 20px;
-  }
-  
-  .social-link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-  
-    background-color: rgba(255, 255, 255, 0.1);
-  
-    @include transit($timing-function);
+}
 
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      color: $background-color;
-    }
-  }
-  
- .social-icon {
-    width: 20px;
-    height: 20px;
-    fill: $background-color;
-  }
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: $background-color;
+}
