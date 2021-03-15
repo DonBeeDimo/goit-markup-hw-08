@@ -13,3 +13,69 @@
     margin-bottom: 20px;
   }
 }
+
+.footer-form {
+  display: block;
+
+  input {
+    width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    // margin-right: 12px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    color: $background-color;
+    background-color: #2f303a;
+  }
+
+  .email::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .subscribe {
+    position: relative;
+    display: flex;
+    margin: auto;
+  
+    padding: 10px 0 10px 29px;
+    border-radius: 4px;
+  
+    min-width: 200px;
+    border: none;
+  
+    background-color: $accent-color;
+    color: $background-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    cursor: pointer;
+  }
+  
+  .telegram {
+    margin-left: 10px;
+    margin-right: 28px;
+    width: 24px;
+    height: 24px;
+  }
+}
