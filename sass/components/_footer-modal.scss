@@ -1,28 +1,48 @@
+.footer-modal {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 93px;
+  }
+}
+
 .email-title {
   text-align: center;
   margin: 60px auto 20px;
   color: $background-color;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
+  @media (min-width: $tablet-width) {
+    // margin-top: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     text-align: left;
     margin-bottom: 20px;
   }
 }
 
+.modal-title {
+  margin: 0;
+}
+
 .footer-form {
   display: block;
+  
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 
   input {
     width: 450px;
     height: 50px;
     padding: 15px 16px;
     margin-bottom: 20px;
-    // margin-right: 12px;
+    
   
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -31,6 +51,13 @@
   
     color: $background-color;
     background-color: #2f303a;
+
+    @media (min-width: $desktop-width) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+      
+    }
   }
 
   .email::placeholder {
@@ -70,6 +97,10 @@
     letter-spacing: 0.06em;
   
     cursor: pointer;
+
+    @media (min-width: $desktop-width) {
+      
+    }
   }
   
   .telegram {

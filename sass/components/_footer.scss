@@ -6,7 +6,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  & > .container {
+  .container-footer {
     display: block;
 
     @media (min-width: $tablet-width) {
@@ -41,13 +41,18 @@
   min-width: 231px;
 
   @media (min-width: $tablet-width) {
-    text-align: left;
-    margin-left: 61px;
+    text-align: center;
+    margin-left: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .address {
   margin-bottom: 8px;
+  text-align: center;
 
   color: $background-color;
   
@@ -58,6 +63,14 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 9px;
+  }
+}
+
+.footer-link {
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
@@ -103,31 +116,27 @@
 .social-networks {
   display: block;
   
-
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row-reverse;
+    margin-left: 165px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }
 
 .networks-title {
-  margin-top: 60px;
-  margin-bottom: 20px;
-
+  text-align: center;
+  margin: 60px auto 20px;
   color: $background-color;
 
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
   @media (min-width: $tablet-width) {
-    
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    text-align: left;
+    margin-bottom: 20;
   }
 }
 
