@@ -11,12 +11,16 @@
   background-color: #f5f4fa;
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
     padding-top: 94px;
     padding-bottom: 94px;
+    
   }
 
   .command-container {
     display: block;
+    margin: auto;
   }
 }
 
