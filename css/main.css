@@ -466,7 +466,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 450px;
+  max-width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -523,7 +523,7 @@ p {
 }
 
 .actions-title {
-  width: 100%;
+  max-width: 100%;
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
@@ -637,23 +637,23 @@ p {
 
 .command-list img {
   margin-bottom: 30px;
-  width: 450px;
+  max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .command-list img {
     width: 354px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .command-list img {
     width: 270px;
   }
 }
 
 .command-item {
-  width: 450px;
+  width: 100%;
   height: 622px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -1251,7 +1251,7 @@ b {
 }
 
 .cart-list .heading-title {
-  width: 450px;
+  max-width: 100%;
   margin: 0;
   padding: 20px 24px;
   background: #ffffff;
@@ -1317,16 +1317,16 @@ b {
 
 .cart-list .card-image {
   margin: 0;
-  width: 450px;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .cart-list .card-image {
     width: 354px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .cart-list .card-image {
     width: 370px;
   }
@@ -1355,7 +1355,7 @@ b {
   top: 0;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
   opacity: 1;
@@ -1601,6 +1601,7 @@ b {
   .email-title {
     text-align: left;
     margin-bottom: 20px;
+    margin-left: 0;
   }
 }
 
@@ -1621,7 +1622,7 @@ b {
 }
 
 .footer-form input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
@@ -1878,5 +1879,11 @@ b {
 
 .menu-sn a {
   color: #2196f3;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
