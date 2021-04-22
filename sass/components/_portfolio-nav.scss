@@ -26,10 +26,23 @@
 
   .button-push + .button-push {
     margin-left: 8px;
+    margin-bottom: 15px;
   }
 
-  .button-push:nth-child(4n) {
-    margin-left: 0;
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    .button-push:nth-child(4n) {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    .button-push:nth-child(3n) {
+      margin-left: 0;
+    }
+
+    .button-push:nth-child(5n) {
+      margin-left: 0;
+    }
   }
 
   .nav {

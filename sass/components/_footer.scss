@@ -29,6 +29,7 @@
 .studio-web {
   width: 154px;
   height: 28px;
+  
 
   @media (min-width: $desktop-width) {
     width: 145px;
@@ -46,6 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    text-align: left;
     margin: 0;
   }
 }
@@ -131,6 +133,14 @@
   margin: 60px auto 20px;
   color: $background-color;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
@@ -153,6 +163,10 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms $timing-function;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
   &:hover,
   &:focus {

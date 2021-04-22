@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 93px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -14,7 +14,13 @@
   text-align: center;
   margin: 60px auto 20px;
   color: $background-color;
+
+  
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     // margin-top: 0;
@@ -22,6 +28,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin-top: 0;
     margin-bottom: 20px;
     margin-left: 0;
   }
@@ -52,6 +59,10 @@
   
     color: $background-color;
     background-color: #2f303a;
+
+    @media (min-width: $tablet-width) {
+      width: 450px;
+    }
 
     @media (min-width: $desktop-width) {
       width: 358px;
