@@ -10,6 +10,7 @@
     max-width: 100%;
     margin: 0;
     padding: 20px 24px;
+    padding-right: 0;
     background: $background-color;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
@@ -97,7 +98,6 @@
 }
 
 .photo-portfolio {
-  height: 294px;
   position: relative;
   overflow: hidden;
 }

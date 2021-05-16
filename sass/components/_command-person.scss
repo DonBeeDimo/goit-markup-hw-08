@@ -21,6 +21,15 @@
   color: $title-text-color;
 }
 
+.networks-list {
+  display: flex;
+  justify-content: center;
+
+  & > li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 .command-link {
   display: inline-flex;
   justify-content: center;

@@ -116,7 +116,7 @@ b {
 .form-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   label {
     margin-bottom: 4px;
@@ -181,7 +181,7 @@ b {
   box-sizing: border-box;
   border-radius: 4px;
 
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   @media (min-width: $desktop-width){
     width: 448px;
@@ -226,31 +226,38 @@ b {
     
 }
 
-// .checkbox {
-//   font-weight: normal;
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-
-//   color: $title-text-color;
-// }
+.checkbox-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 23px;
+}
 
 .checkbox-icon {
-  display: inline-block;
+  position: absolute;
+  left: 0;
   width: 16px;
   height: 15px;
   margin-right: 7px;
 
   border: 2px solid $primary-text-color;
   border-radius: 2px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+  @include transit($timing-function);
+  }
 }
 
 .checkbox:checked + .checkbox-icon {
   border-color: $accent-color;
   background-color: $accent-color;
-  background-image: url("../images/iconcheckminimal.svg");
+  background-image: url("../images/vectortot.svg");
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 
 }
 
@@ -297,6 +304,3 @@ b {
     margin-top: 30px;
   }
 }
-
-
-
