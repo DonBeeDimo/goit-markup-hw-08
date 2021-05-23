@@ -11,8 +11,8 @@
 }
 
 .email-title {
+  margin: 0;
   text-align: center;
-  margin: 60px auto 20px;
   color: $background-color;
 
   
@@ -20,22 +20,15 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-
-  @media (min-width: $tablet-width) {
-    // margin-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 0;
-  }
 }
 
 .modal-title {
-  margin: 0;
+  margin: 60px auto 20px;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: left;
+  }
 }
 
 .footer-form {

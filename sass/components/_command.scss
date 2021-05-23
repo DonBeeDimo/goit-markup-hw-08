@@ -47,25 +47,8 @@
     }
   }
 
-  
-
   & img {
-    // margin-bottom: 30px;
     width: 100%;
-
-    @media (min-width: $mobile-width) {
-      height: 460px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 354px;
-      height: 374px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 270px;
-      height: 260px;
-    }
   }
 }
 

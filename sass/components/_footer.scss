@@ -129,9 +129,22 @@
   }
 }
 
-.networks-title {
-  text-align: center;
+.network-heading {
   margin: 60px auto 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-bottom: 20;
+  }
+}
+
+.networks-title {
+  margin: 0;
+  text-align: center;
   color: $background-color;
 
   font-family: Roboto;
@@ -142,13 +155,8 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    margin-top: 0;
-  }
-
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin-bottom: 20;
   }
 }
 
