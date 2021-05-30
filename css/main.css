@@ -972,7 +972,6 @@ textarea {
 
 .form {
   width: 100%;
-  height: 609px;
   /* outline: 1px solid tomato; */
   margin-left: auto;
   margin-right: auto;
@@ -1179,8 +1178,10 @@ b {
 
 .checkbox-icon {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -1202,6 +1203,7 @@ b {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .link-contract {
@@ -1625,11 +1627,19 @@ b {
 
 .social-networks {
   display: block;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .social-networks {
+    margin-bottom: 102px;
+  }
 }
 
 @media (min-width: 1200px) {
   .social-networks {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1729,7 +1739,6 @@ b {
 }
 
 .modal-title {
-  margin: 60px auto 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

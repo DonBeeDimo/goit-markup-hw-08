@@ -123,9 +123,15 @@
 
 .social-networks {
   display: block;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 102px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
